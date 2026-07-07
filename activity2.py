@@ -1,15 +1,27 @@
-friends = {
-    "Rishit": "9 March",
-    "Ayushman": "15 July",
-    "Ananya": "22 November",
-    "Priya": "5 January",
-    "Harry": "30 September",
-}
+# Assigning Different Variables
+name = "Penguin"
+age = 15
+is_student = True
+weight = 38.5
 
-name = input("Enter friend's name: ")
+# Printing Different Variables and their Data Type
+print("Name :", name)
+print("Data Type of Name is", type(name))
 
-birthday = friends.get(name)
-if birthday:
-    print(f"{name}'s birthday is {birthday}.")
-else:
-    print("Friend not found.")
+print("Age :", age)
+print("Data Type of Age is", type(age))
+
+print("is_student :", is_student)
+print("Data Type of is_student is", type(is_student))
+
+print("Weight :", weight)
+print("Data Type of weight is", type(weight))
+
+# Type casting to convert the datatype of variables
+print("\n After Type Casting....")
+age = str(age)
+print(age)
+print("Data Type of age is", type(age))
+weight = int(weight)
+print(weight)
+print("Data Type of Weight is", type(weight))
