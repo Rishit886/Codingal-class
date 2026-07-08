@@ -1,15 +1,15 @@
-friends = {"Rishit": "9 March",
-    "Ayushman": "15 July",
-    "Ananya": "22 November",
-    "Priya": "5 January",
-    "Harry": "30 September",
+friends = {"9 March": "Rishit",
+    "15 July": "Ayushman",
+    "22 November": "Ananya",
+    "5 January": "Priya",
+    "30 September": "Harry",
 }
     
 
-name = input("Enter friend's name: ")
+birthday = input("Enter birthday (MM DD): ")
 
-birthday = friends.get(name)
-if birthday:
+name = friends.get(birthday)
+if name:
     print(f"{name}'s birthday is {birthday}.")
 else:
     print("Friend not found.")
