@@ -1,12 +1,17 @@
+# Printing the title
+print("My Daily Routine")
 
-a = 5
-print("type of a: ", type(a))
+# Step 1: Waking up
+print("I wake up at 7 AM.")
 
-b=2.5
-print("type of b: ", type(b))
+# Step 2: Going to school
+print("I go to school at 8 AM.")
 
-c= "coding"
-print("type of c: ", type(c))
+# Step 3: Playing after school
+print("I play with my friends in the evening.")
 
-d= True
-print("type of d: ", type(d))
+# Step 4: Studying
+print("I study for 2 hours at night.")
+
+# Calculating total study time in a week
+print("Total study hours in a week:", 2 * 7)
