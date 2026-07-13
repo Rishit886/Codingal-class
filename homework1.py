@@ -1,2 +1,3 @@
-word = input("Enter a word in lowercase: ")
-print("Word in uppercase:", word.upper())
+num = float(input("Enter a number: "))
+sqrt_num = num ** 0.5
+print(sqrt_num)
