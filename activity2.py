@@ -1,15 +1,12 @@
-friends = {"9 March": "Rishit",
-    "15 July": "Ayushman",
-    "22 November": "Ananya",
-    "5 January": "Priya",
-    "30 September": "Harry",
-}
-    
+# Taking total amount as input from user
+Amount =int(input("Please Enter Amount for Withdraw :"))
 
-birthday = input("Enter birthday (MM DD): ")
+# Calculating the number of notes of different denominations
+note_1 = Amount//100
+note_2 = (Amount%100)//50
+note_3 = ((Amount%100)%50)//10
 
-name = friends.get(birthday)
-if name:
-    print(f"{name}'s birthday is {birthday}.")
-else:
-    print("Friend not found.")
+
+print( "notes of 100 rupee" , note_1)
+print("notes of 50 rupee" , note_2)
+print("notes of 10 rupee" , note_3)
