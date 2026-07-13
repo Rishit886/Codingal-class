@@ -1,8 +1,15 @@
-actual_cost = float(input(" Please Enter the Actual Product Price: "))
-sale_amount = float(input(" Please Enter the Sales Amount: "))
- 
-if (sale_amount > actual_cost):
-    amount = sale_amount - actual_cost
-    print(f"Total Profit = {amount}")
+friends = {"9 March": "Rishit",
+    "15 July": "Ayushman",
+    "22 November": "Ananya",
+    "5 January": "Priya",
+    "30 September": "Harry",
+}
+    
+
+birthday = input("Enter birthday (MM DD): ")
+
+name = friends.get(birthday)
+if name:
+    print(f"{name}'s birthday is {birthday}.")
 else:
-    print("No Profit!!!")
+    print("Friend not found.")
