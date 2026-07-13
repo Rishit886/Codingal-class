@@ -1,12 +1,8 @@
-# Taking total amount as input from user
-Amount =int(input("Please Enter Amount for Withdraw :"))
-
-# Calculating the number of notes of different denominations
-note_1 = Amount//100
-note_2 = (Amount%100)//50
-note_3 = ((Amount%100)%50)//10
-
-
-print( "notes of 100 rupee" , note_1)
-print("notes of 50 rupee" , note_2)
-print("notes of 10 rupee" , note_3)
+actual_cost = float(input(" Please Enter the Actual Product Price: "))
+sale_amount = float(input(" Please Enter the Sales Amount: "))
+ 
+if (sale_amount > actual_cost):
+    amount = sale_amount - actual_cost
+    print(f"Total Profit = {amount}")
+else:
+    print("No Profit!!!")
