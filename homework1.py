@@ -1,3 +1,5 @@
-num = float(input("Enter a number: "))
-sqrt_num = num ** 0.5
-print(sqrt_num)
+ch = input("Enter a character: ")
+if 'a' <= ch <= 'z' or 'A' <= ch <= 'Z':
+    print("The character is an alphabet.")
+else:
+    print("The character is not an alphabet.")
