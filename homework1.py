@@ -1,5 +1,4 @@
-ch = input("Enter a character: ")
-if 'a' <= ch <= 'z' or 'A' <= ch <= 'Z':
-    print("The character is an alphabet.")
-else:
-    print("The character is not an alphabet.")
+number = int(input("Please enter a number: "))
+number2 = int(input("Please enter another number: "))
+result = number ** number2
+print(result)
