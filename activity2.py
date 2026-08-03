@@ -1,15 +1,4 @@
-friends = {"9 March": "Rishit",
-    "15 July": "Ayushman",
-    "22 November": "Ananya",
-    "5 January": "Priya",
-    "30 September": "Harry",
-}
-    
-
-birthday = input("Enter birthday (MM DD): ")
-
-name = friends.get(birthday)
-if name:
-    print(f"{name}'s birthday is {birthday}.")
-else:
-    print("Friend not found.")
+x = 1,000
+y= 1,100
+while y>x:
+    print("This is true ")
