@@ -1,8 +1,18 @@
-i = int(input("enter a number : "))
-if (i < 15):
-    print ("i is smaller than 15")
-    print ("i'm in if Block")
-else:
-    print ("i is greater than 15")
-    print ("i'm in else Block")
-print ("i'm not in if and not in else Block")
+# take input from user 
+num = int(input("Please enter a number: "))
+
+# intialize sum
+sum = 0
+
+# find the sum of each cube digit
+temp = num
+while temp > 0:
+    digit = temp % 10
+    sum += digit ** 3
+    temp //= 10
+
+# display the result
+if num == sum:
+    print(num, "is an Armstrong number")
+else: 
+    print(num, "is not an Armstrong number")
