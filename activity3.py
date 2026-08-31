@@ -1,26 +1,30 @@
-#Input a number 
-num = int(input("Enter the number : "))
-t = num
-numLen = 0
-#iterate the loop
-while t>0: 
-  numLen = numLen+1
-  t = int(t/10)
-
-if numLen>=4: #condition 1
-  numLen = int(numLen/2)
-  chk = 0
-  while num>0: #iterate loop
-    rem = num%10
-    if chk==numLen: #nested condition 1
-      midOne = rem
-    elif chk==(numLen-1): 
-      midTwo = rem
-    num = int(num/10)
-    chk = chk+1
-  prod = midOne*midTwo #product of middle digits
-  #display the result
-  print("\nProduct of Mid digits (" +str(midOne)+ "*" +str(midTwo)+ ") = ", prod)
-
+#take input from user
+rowSize = int(input("enter the number of rows: "))
+if rowSize%2==0: #conditions
+  halfDiamRow = int(rowSize/2)
 else:
-  print("\nIt's not a 4 or more than 4-digit number!")
+  halfDiamRow = int(rowSize/2)+1
+space = halfDiamRow-1
+#loop for upper part 
+for i in range(1, halfDiamRow+1): #loop for rows
+  for j in range(1, space+1): #loop for columns
+    print(end=" ")
+  space = space-1
+  num = 1
+  for j in range(2*i-1):
+    print(end=str(num))
+  #incerementing number at each column
+    num = num+1
+  print()
+space = 1
+#loop for lower part
+for i in range(1, halfDiamRow): #loop for rows
+  for j in range(1, space+1):  #loop for columns
+    print(end=" ")
+  space = space+1
+  num = 1
+  for j in range(1, 2*(halfDiamRow-i)):
+    print(end=str(num)) #display result
+  #incerementing number at each column
+    num = num+1
+  print()
