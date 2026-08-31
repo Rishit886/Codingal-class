@@ -1,4 +1,5 @@
-import turtle
-for i in range(4):
-    turtle.forward(100)
-    turtle.left(90)
+import math
+r = int(input("Enter the radius of the circle: "))
+def circumference():
+    2*math.pi*r
+print(2*math.pi*r)
