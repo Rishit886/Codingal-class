@@ -1,11 +1,13 @@
+# define function to calculate cube
+def cube(num):
+    return num**3
 
-rows = int(input("Please Enter the total Number of Rows  : "))
-number = 1 
-
-print("Floyd's Triangle") 
-
-for i in range(1, rows + 1):
-    for j in range(1, i + 1):    
-        print(number, end = '  ')
-        number = number + 1
-    print()
+# define a function which will excecute cube function if the user entered number is divisible by 3
+def by_three(num):
+    if num%3==0:
+        return cube(num)
+    else:
+        return False
+# display result
+print(by_three(9))
+print(by_three(4))
