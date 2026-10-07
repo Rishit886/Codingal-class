@@ -1,7 +1,14 @@
-m = int(input("Enter a number: "))
-if m%2 == 0:
-    print("The number is even.")
-elif m%2 == 1:
-    print("The number is odd.")
-else:
-    print("Sorry, that is not a number.")
+import math
+
+angle_degrees = float(input("Enter the angle in degrees: "))
+
+angle_radians = math.radians(angle_degrees)
+
+sin_val = math.sin(angle_radians)
+cos_val = math.cos(angle_radians)
+tan_val = math.tan(angle_radians)
+
+print(f"Angle: {angle_degrees} degrees")
+print(f"Sine: {sin_val:.4f}")
+print(f"Cosine: {cos_val:.4f}")
+print(f"Tangent: {tan_val:.4f}")
