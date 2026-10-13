@@ -1,0 +1,4 @@
+L = [1,2,3,4,5,6,7,8,9,10]
+def extract(L):
+    return L[0], L[-1]
+print(extract(L)[0]*2, extract(L)[-1]*2)
